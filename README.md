@@ -69,7 +69,7 @@ with open("README.md", "r") as f:
 
 
 setup(
-    name="spotipy_anon",  # no "-" allowed
+    name="your_module",  # no "-" allowed
     version="0.1.0",
     description="A short description of what your module/library does.",
     long_description=long_description,
@@ -82,7 +82,7 @@ setup(
     },
     install_requires=["requests>=2.30.0"],  # Try to specify the latest version or higher
     license="MIT",  # your license of choice
-    packages=["spotipy_anon"])  # the actual location of your module.
+    packages=["your_module"])  # the actual location of your module.
 ```
 Make sure that you have a README.md for the long description.
 If you want a "-" in your name, I have no idea how that works. Maybe it pulls the name from the GitHub repo or just replaces "_" with "-", but seriously, no idea.
