@@ -8,6 +8,8 @@
 
 What? You've already screwed up your first release with `irelease` like I recently did? 
 The releases on PyPI should be fine but the tags on GitHub are probably not.
+In my case `irelease` pushed my whole virtual environment, which are more than 5000 files alone.
+This can get disruptive when working with the module after this incident. (That's also the reason why I wrote all this).
 If you don't care about the history and tags of your repository, then you can follow my steps.
 Otherwise you might want to take a look at [git-filter-repo](https://github.com/newren/git-filter-repo). But please don't ask me how to use it.
 
