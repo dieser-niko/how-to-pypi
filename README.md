@@ -118,6 +118,24 @@ Then switch to GitHub, open the repository and do the following:
 
 Everything else is up to you, but you can now click `Publish release` and you're done!
 
+## Create a release for PyPI
 
+First, let's install the only requirement:
+```bash
+pip install twine
+```
 
+Build your package by executing
+```bash
+python setup.py sdist
+```
+This command will create a dist directory containing a compressed archive of your package.
 
+Then upload the files with twine
+```bash
+cd dist
+twine upload *
+```
+
+It is going to ask for your PyPI login and after that, it is done.
+Thanks for reading.
