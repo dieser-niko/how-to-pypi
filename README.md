@@ -18,7 +18,7 @@ Clone the repository onto your local hard drive.
 ```bash
 git clone github.com/<username>/<repository>
 ```
-Delete the .git folder in your repository to start over and create a new repository:
+Delete the .git folder as well as unwanted files/folders in your repository to start over and create a new repository:
 ```bash
 git init -b main
 ```
