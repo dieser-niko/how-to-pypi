@@ -59,4 +59,16 @@ Deleting tags and releases is easy on GitHub. Go to the releases and delete them
 This part is somewhat deprecated, instead of the setup.py I am going to use [pyproject.toml](https://pip.pypa.io/en/stable/reference/build-system/pyproject-toml/) with python -m [build](https://pypi.org/project/build)
 I will update this document at some point to include releases on GitHub (not that hard, really), but first I have to figure out the new way of publishing packages.
 
+### Create a workflow
+
+Create a new file under `.github/workflows/release.yml`. For the file content itself you can use [release.yml from spotipy-anon](https://github.com/dieser-niko/spotipy-anon/blob/main/.github/workflows/release.yml).
+Then go to your repository settings and create an environment called "release".
+
+If you already have a project, follow [this tutorial](https://docs.pypi.org/trusted-publishers/adding-a-publisher/), but you can also follow [this tutorial](https://docs.pypi.org/trusted-publishers/creating-a-project-through-oidc/) if you don't have one yet.
+
+### Create a new release
+
+Go onto the releases site for your repository and create a new release and a tag with it. Make sure that the new version number is also mentioned in the `setup.py` file.
+Hit create and wait until the workflow did its job.
+
 Thanks for reading.
